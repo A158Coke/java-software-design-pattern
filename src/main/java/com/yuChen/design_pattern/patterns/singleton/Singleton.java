@@ -1,8 +1,10 @@
 package com.yuChen.design_pattern.patterns.singleton;
 
+import lombok.Getter;
+
 public class Singleton {
+    @Getter
     private static final Singleton instance = new Singleton();
-    private static Singleton getInstance(){
-        return instance;
-    }
+
+    private Singleton(){}
 }
